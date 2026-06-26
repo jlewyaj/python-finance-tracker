@@ -10,7 +10,7 @@ class CSV:
         try:
             pd.read_csv(cls.CSV_FILE)
         except FileNotFoundError:
-            df = pd.DataFrame(columns=["date", "ammount", "category", "description"])
+            df = pd.DataFrame(columns=["date", "amount", "category", "description"])
             df.to_csv(cls.CSV_FILE, index=False)
 
 
